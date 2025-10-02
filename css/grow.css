@@ -1,0 +1,21 @@
+.grow {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.grow:hover {
+  transform: scale(1.25);
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+.link-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}

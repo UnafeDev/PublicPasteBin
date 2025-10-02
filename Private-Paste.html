@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=9XfRMf3lgdCh&format=png&color=000000">
+  <link rel="stylesheet" href="css/Private.css">
+  <link rel="stylesheet" href="css/grow.css">
+  <link rel="stylesheet" href="css/bar.css">
+  <meta charset="UTF-8">
+  <title>Private Pastebin</title>
+</head>
+<body>
+<div class="topbar">
+  <a href="index.html" 
+  class="link-with-icon grow">
+    Home
+    <img src="https://img.icons8.com/?size=100&id=8xhovyHdOQzF&format=png&color=000000" 
+    alt="homelogo" 
+    style="vertical-align: center;">
+  </a>
+
+  <a href="About-Us.html" 
+  class="link-with-icon grow">
+    About Us
+    <img src="https://img.icons8.com/?size=100&id=Sw8WdC6SDcG8&format=png&color=000000" 
+    alt="infologo" 
+    style="vertical-align: center;">
+  </a>
+
+  <a href="delete-request.html" 
+  class="link-with-icon grow">
+    Accout Deletion
+    <img src="https://img.icons8.com/?size=100&id=m72VkT5XpwzG&format=png&color=000000" 
+    alt="removelogo" 
+    style="vertical-align: center;">
+  </a>
+</div>
+<br>
+<h1>Private Pastebin</h1>
+<div class="container">
+<!-- Auth -->
+  <div id="authSection">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signup()" class="grow">Sign Up</button>
+    <button onclick="login()" class="grow">Login</button>
+    <button onclick="logout()" class="grow">Logout</button>
+    <p id="authStatus">Not logged in</p>
+  </div>
+
+  <!-- Paste input -->
+  <textarea id="pasteInput" placeholder="Type something..."></textarea>
+  <input type="text" id="customCodeInput" placeholder="Enter your custom access code">
+  <button onclick="addPrivatePaste()" class="grow">Create Private Paste</button>
+
+<br>
+
+  <!-- View paste by code -->
+  <h3>Access Private Paste</h3>
+  <input type="text" id="pasteCodeInput" placeholder="Enter paste code">
+  <button onclick="getPasteByCode()" class="grow">View Paste</button>
+<br>
+  <div class="content" id="pasteContent" style="text-align: center;">No paste selected</div>
+
+  <h6>
+      Icons Made By <a href="https://icons8.com" style="color: white;">Icons8</a>
+      <br>
+      Site Made By <a href="https://github.com/UnafeDev" style="color: white;">UnafeDev</a>
+      <br>
+      Files Hosted By <a href="https://firebase.google.com" style="color: white;">Firebase</a>
+  </h6>
+</div>
+<p>Socials</p>
+  <div style="padding: 20px; text-align: center;">
+    <a href="https://github.com/UnafeDev" target="_blank">
+      <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="GitHub Icon" class="grow" style="vertical-align: middle;">
+  </a>
+
+  <a href="https://www.tiktok.com/@suouyuki._" target="_blank">
+    <img src="https://img.icons8.com/?size=100&id=GN6LgEfShU2b&format=png&color=000000" alt="tiktokLogo" class="grow" style="vertical-align: middle;">
+  </a>
+  </div>
+<script type="module" src="js/private.js"></script>
+</body>
+</html>

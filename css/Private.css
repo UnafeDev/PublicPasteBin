@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  flex-direction: column; /* Stack topbar and container vertically */
+  align-items: center; /* Center the container horizontally */
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(34, 34, 34);
+  font-family: Arial, sans-serif;
+}
+input {
+    padding: 5px;
+    display: block;
+    margin: 0px auto;
+    border: none;
+    border-radius: 30px;
+}
+textarea {
+    padding: 100px 200px;
+    display: block;
+    margin: 50px auto;
+    border: none;
+    border-radius: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+h3 {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+#authSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: black;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+#authSection input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+button {
+  width: 200px;
+  height: 45px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background: black;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+.tab {
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: #222;
+  cursor: pointer;
+}
+.tab.active {
+  background: #444;
+  font-weight: bold;
+}
+.content {
+  background: black;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  min-height: 80px;
+  text-align: left;
+}
+p {
+  color: white;
+  margin-bottom: 0;
+  font-size: 18px;
+  text-align: center;
+}
+h6 {
+  color: white;
+  margin-top: 0;
+  font-size: 12px;
+  text-align: center;
+}
